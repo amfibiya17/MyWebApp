@@ -20,5 +20,15 @@ namespace RazorPagesPizza.Pages
     {
       return pizza.IsGlutenFree ? "Gluten Free": "Not Gluten Free";
     }
+
+    public IActionResult OnPost()
+    {
+      if (!ModelState.IsValid)
+      {
+        return Page();
+      }
+      PizzaService.Add(NewPizza);
+      return RedirectToAction("Get");
+    }
   }
 }
