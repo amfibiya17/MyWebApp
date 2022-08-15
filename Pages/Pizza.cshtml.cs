@@ -8,7 +8,7 @@ namespace RazorPagesPizza.Pages
   public class PizzaModel : PageModel
   {
     [BindProperty]
-    public Pizza NewPizza { get; set; }
+    public Pizza NewPizza { get; set; } = new();
 
     public void OnGet()
     {
@@ -28,6 +28,12 @@ namespace RazorPagesPizza.Pages
         return Page();
       }
       PizzaService.Add(NewPizza);
+      return RedirectToAction("Get");
+    }
+
+    public IActionResult OnPostDelete(int id)
+    {
+      PizzaService.Delete(id);
       return RedirectToAction("Get");
     }
   }
