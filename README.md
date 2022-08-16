@@ -1,16 +1,16 @@
 ASP.NET App RazorPagesPizza
 ===
 
-Link for deployed application -->> [RazorPagesPizza](https://razorpagespizza.azurewebsites.net/)
+Link to the deployed application -->> [RazorPagesPizza](https://razorpagespizza.azurewebsites.net/)
 
 ## What is this project about
 
 - In this project, I examined the Razor Pages architecture in an ASP.NET Core app
-- This app provided a UI for updating and deleting product listings exposed through a web API endpoint
+- This app provides a UI to update and delete product listings exposed through a web API endpoint
 - I added a product creation form, taking advantage of Razor Tag Helpers
 - With Tag Helpers, it is easy to quickly added client-side and server-side validation. I also gained cross-site antiforgery validation
 - I coded its PageModel class that provided a separation of concern for the page's logic operations and data properties
-- The app was deployed to Azure 
+- The app is deployed to Azure 
 ---
 
 ## Examples of usage:
